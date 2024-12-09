@@ -1,0 +1,101 @@
+$primary-color: #F0ECEB;
+$second-color: #E4E0DD;
+$footer-color: #000000;
+
+@mixin quatreK {
+  @media all and (min-width: 1900px) {
+    @content;
+  }
+}
+
+@mixin ordiLarge {
+  @media all and (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin ordi {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mini-ordi {
+  @media all and (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (max-width: 770px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media all and (max-width: 400px) {
+    @content;
+  }
+}
+@mixin mini-mobile-s {
+  @media all and (max-width: 350px) {
+    @content;
+  }
+}
+
+body {
+  cursor: auto;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: local("GreatVibes"),
+    url(/fonts/Great_Vibes/GreatVibes-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Grenze";
+  src: local("Grenze"),
+    url(/fonts/Grenze/Grenze-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "InriaSerif";
+  src: local("InriaSerif"),
+    url(/fonts/Inria_Serif/InriaSerif-Regular.ttf) format("truetype");
+}
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mainLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Pour débuger quand ça sort de l'écran
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */

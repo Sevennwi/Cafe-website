@@ -1,1 +1,79 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  cursor: auto;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: local("GreatVibes"), url(/fonts/Great_Vibes/GreatVibes-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Grenze";
+  src: local("Grenze"), url(/fonts/Grenze/Grenze-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "InriaSerif";
+  src: local("InriaSerif"), url(/fonts/Inria_Serif/InriaSerif-Regular.ttf) format("truetype");
+}
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes mainLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+p {
+  font-family: "InriaSerif";
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/pictures/header.jpg) center;
+  color: white;
+}
+header .mainTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+header .mainTitle h1 {
+  font-size: 7em;
+  font-family: "GreatVibes";
+  padding-top: 20px;
+}
+header .mainTitle ul {
+  display: flex;
+  gap: 50px;
+}
+header .hourAdress {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+header .hourAdress_each {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .hourAdress_each span {
+  font-size: 3em;
+}
+header .hourAdress_each p {
+  font-size: 2em;
+}/*# sourceMappingURL=style.css.map */

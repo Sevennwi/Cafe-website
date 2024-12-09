@@ -1,0 +1,42 @@
+@import "./utils/variable";
+
+p {
+  font-family: "InriaSerif";
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(/pictures/header.jpg) center;
+  color: white;
+  .mainTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    h1 {
+      font-size: 7em;
+      font-family: "GreatVibes";
+      padding-top: 20px;
+    }
+    ul {
+      display: flex;
+      gap: 50px;
+    }
+  }
+  .hourAdress {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    &_each {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      span {
+        font-size: 3em;
+      }
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+}
