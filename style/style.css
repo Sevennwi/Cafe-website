@@ -45,6 +45,10 @@ p {
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/pictures/header.jpg) center;
   color: white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 header .mainTitle {
   display: flex;
@@ -54,16 +58,20 @@ header .mainTitle {
 header .mainTitle h1 {
   font-size: 7em;
   font-family: "GreatVibes";
-  padding-top: 20px;
+  padding-top: 40px;
 }
 header .mainTitle ul {
   display: flex;
   gap: 50px;
 }
+header .logo {
+  margin-top: -100px;
+}
 header .hourAdress {
   display: flex;
   justify-content: center;
   gap: 200px;
+  padding-bottom: 40px;
 }
 header .hourAdress_each {
   display: flex;
@@ -75,5 +83,98 @@ header .hourAdress_each span {
   font-size: 3em;
 }
 header .hourAdress_each p {
+  font-size: 1.7em;
+  margin: 0;
+}
+
+.sectionAbout {
+  background-color: #F0ECEB;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  gap: 50px;
+}
+.sectionAbout div {
+  max-width: 50%;
+}
+.sectionAbout div h2 {
+  font-size: 3em;
+  font-family: "InriaSerif";
+  padding-bottom: 20px;
+}
+.sectionAbout div h3 {
+  font-family: 2em;
+  font-family: "Grenze";
+  padding-bottom: 20px;
+}
+.sectionAbout div p {
+  font-size: 1.3em;
+}
+.sectionAbout div .coffeeImg {
+  max-width: 500px;
+  margin-top: -50px;
+}
+
+.sectionMenu {
+  background-color: #E4E0DD;
+}
+.sectionMenu .grid .grid-1 {
+  max-width: 75%;
+  height: 600px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.sectionMenu .grid .grid-2 {
+  max-width: 75%;
+  height: 500px;
+  margin: auto;
+}
+.sectionMenu .grid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -70px;
+}
+.sectionMenu .menu {
+  margin: auto;
+  max-width: 75%;
+  padding-bottom: 70px;
+}
+.sectionMenu .menu h3 {
+  font-family: "InriaSerif";
+  font-weight: bold;
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+.sectionMenu .menu h4 {
+  font-family: "Grenze";
+  padding-bottom: 20px;
   font-size: 2em;
+}
+.sectionMenu .menu .tableDrink {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 70px;
+}
+.sectionMenu .menu .tableDrink_1 {
+  width: 50%;
+  border-top: 1px solid #222;
+}
+.sectionMenu .menu .tableDrink_2 {
+  width: 50%;
+  border-top: 1px solid #222;
+}
+.sectionMenu .menu .tableDrink_each {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+  padding: 10px 0;
+}
+.sectionMenu .menu .tableDrink_each p {
+  margin: 0;
+  font-size: 1.3em;
 }/*# sourceMappingURL=style.css.map */

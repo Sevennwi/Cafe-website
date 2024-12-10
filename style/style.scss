@@ -8,6 +8,10 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url(/pictures/header.jpg) center;
   color: white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .mainTitle {
     display: flex;
     justify-content: space-between;
@@ -15,17 +19,21 @@ header {
     h1 {
       font-size: 7em;
       font-family: "GreatVibes";
-      padding-top: 20px;
+      padding-top: 40px;
     }
     ul {
       display: flex;
       gap: 50px;
     }
   }
+  .logo {
+    margin-top: -100px;
+  }
   .hourAdress {
     display: flex;
     justify-content: center;
     gap: 200px;
+    padding-bottom: 40px;
     &_each {
       display: flex;
       justify-content: center;
@@ -35,7 +43,101 @@ header {
         font-size: 3em;
       }
       p {
-        font-size: 2em;
+        font-size: 1.7em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.sectionAbout {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  gap: 50px;
+  div {
+    max-width: 50%;
+    h2 {
+      font-size: 3em;
+      font-family: "InriaSerif";
+      padding-bottom: 20px;
+    }
+    h3 {
+      font-family: 2em;
+      font-family: "Grenze";
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 1.3em;
+    }
+    .coffeeImg {
+      max-width: 500px;
+      margin-top: -50px;
+    }
+  }
+}
+
+.sectionMenu {
+  background-color: $second-color;
+  .grid {
+    .grid-1 {
+      max-width: 75%;
+      height: 600px;
+      padding-bottom: 20px;
+      margin: auto;
+    }
+    .grid-2 {
+      max-width: 75%;
+      height: 500px;
+      margin: auto;
+    }
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: -70px;
+    }
+  }
+  .menu {
+    margin: auto;
+    max-width: 75%;
+    padding-bottom: 70px;
+    h3 {
+      font-family: "InriaSerif";
+      font-weight: bold;
+      font-size: 3em;
+      padding-bottom: 20px;
+    }
+    h4 {
+      font-family: "Grenze";
+      padding-bottom: 20px;
+      font-size: 2em;
+    }
+    .tableDrink {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      padding-bottom: 70px;
+      &_1 {
+        width: 50%;
+        border-top: 1px solid #222;
+      }
+      &_2 {
+        width: 50%;
+        border-top: 1px solid #222;
+      }
+      &_each {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #222;
+        padding: 10px 0;
+        p {
+          margin: 0;
+          font-size: 1.3em;
+        }
       }
     }
   }
