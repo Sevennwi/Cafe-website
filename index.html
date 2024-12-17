@@ -16,17 +16,25 @@
     <header>
       <div class="mainTitle">
         <div>
-          <h1>Brussels Brews</h1>
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Menu</li>
-              <li>Contact Us</li>
-            </ul>
-          </nav>
+          <h1 id="home">Brussels Brews</h1>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div><img class="logo" src="/pictures/logo.png" alt="logo" /></div>
+        <div class="logoContainer">
+          <img class="logo" src="/pictures/logo-rec.png" alt="logo" />
+        </div>
       </div>
       <div class="hourAdress">
         <div class="hourAdress_each">
@@ -43,38 +51,44 @@
         </div>
       </div>
     </header>
-    <section class="sectionAbout">
-      <div>
-        <h2>Best Coffee in town</h2>
-        <h3>Brussels' gem</h3>
-        <p>
-          Welcome to Brussels Brews, your go-to café in the heart of Brussels
-          for exceptional coffee, warm connections, and a taste of Belgium's
-          finest. Here, we're all about celebrating the vibrant culture of our
-          city while crafting moments that feel personal and inviting.
-        </p>
-      </div>
-      <div>
-        <img class="coffeeImg" src="/pictures/design-coffee.png" alt="coffee" />
+    <section class="sectionAbout" id="about">
+      <div class="about">
+        <div class="about_each">
+          <h2>Best Coffee in town</h2>
+          <h3>Brussels' gem</h3>
+          <p>
+            Welcome to Brussels Brews, your go-to café in the heart of Brussels
+            for exceptional coffee, warm connections, and a taste of Belgium's
+            finest. Here, we're all about celebrating the vibrant culture of our
+            city while crafting moments that feel personal and inviting.
+          </p>
+        </div>
+        <div class="about_each">
+          <img
+            class="coffeeImg"
+            src="/pictures/design-coffee.png"
+            alt="coffee"
+          />
+        </div>
       </div>
     </section>
     <section class="sectionMenu">
       <div class="grid">
         <div class="grid-1 row">
-          <img class="col-sm-7" src="/pictures/grid/bike.jpg" alt="shop" />
-          <img class="col-sm-5" src="/pictures/grid/coffee.jpg" alt="coffee" />
+          <img class="col-7" src="/pictures/grid/bike.jpg" alt="shop" />
+          <img class="col-5 last" src="/pictures/grid/coffee.jpg" alt="coffee" />
         </div>
         <div class="grid-2 row">
           <img class="col-4" src="/pictures/grid/table.jpg" alt="coffee" />
           <img class="col-4" src="/pictures/grid/outside.jpg" alt="shop" />
           <img
-            class="col-4"
+            class="col-4 last"
             src="/pictures/grid/coffee-maker.jpg"
             alt="coffee maker"
           />
         </div>
       </div>
-      <div class="menu">
+      <div class="menu" id="menu">
         <h3>Menu</h3>
         <h4>Drinks</h4>
         <div class="tableDrink">
@@ -148,6 +162,73 @@
         </div>
       </div>
     </section>
+    <section class="sectionCard">
+      <div class="cards">
+        <div class="cards_each">
+          <img src="/pictures/card/study.jpg" alt="study" />
+          <h4>Best place to study</h4>
+          <p>
+            Looking for a study-friendly café? Brussels Brews is the perfect
+            spot, with comfortable seating, free Wi-Fi, and a peaceful
+            atmosphere. Stay energized with our delicious coffee and treat
+            yourself to a fresh pastry while you work. It's where focus meets
+            comfort!
+          </p>
+        </div>
+        <div class="cards_each">
+          <img src="/pictures/card/friend.jpg" alt="friend meeting" />
+          <h4>Best place to meet with friend</h4>
+          <p>
+            Looking for the perfect hangout spot? We offer a cozy atmosphere,
+            delicious coffee, and fresh pastries to enjoy while you catch up
+            with friends. It's the ideal place to relax, laugh, and make
+            memories together!
+          </p>
+        </div>
+        <div class="cards_each">
+          <img src="/pictures/card/chill.jpg" alt="chill" />
+          <h4>Best place to chill</h4>
+          <p>
+            Need a spot to unwind? Brussels Brews is the ultimate place to relax
+            with a cup of coffee and a tasty treat. With its cozy vibe and
+            welcoming atmosphere, it's perfect for kicking back and enjoying
+            some downtime.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div class="info">
+        <div class="info_each">
+          <h3>Open Hours</h3>
+          <p>Monday-Saturday</p>
+          <p>AM 9:00- PM 6:00</p>
+        </div>
+        <div class="info_each">
+          <h3>Find Us</h3>
+          <p>Rue des Artisans 42</p>
+          <p>1000 Bruxelles</p>
+        </div>
+        <div class="info_each">
+          <h3>Contact Us</h3>
+          <p><a href="#">+32 5 48 78 52 32</a></p>
+          <p><a href="#">brusselsbrew@info.com</a></p>
+        </div>
+      </div>
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-bluesky"></i></a>
+      </div>
+      <div class="brand">
+        <p><a href="#">Term and privacy</a></p>
+        <p>/</p>
+        <p>
+          Design by
+          <a href="https://killianbrunet.com" target="_blank">Killian</a>
+        </p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

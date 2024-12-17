@@ -60,18 +60,78 @@ header .mainTitle h1 {
   font-family: "GreatVibes";
   padding-top: 40px;
 }
-header .mainTitle ul {
-  display: flex;
-  gap: 50px;
+@media all and (max-width: 1050px) {
+  header .mainTitle h1 {
+    font-size: 6em;
+  }
 }
-header .logo {
-  margin-top: -100px;
+@media all and (max-width: 350px) {
+  header .mainTitle h1 {
+    font-size: 5em;
+  }
+}
+header .logoContainer {
+  max-width: 100%;
+}
+@media all and (max-width: 1200px) {
+  header .logoContainer {
+    max-width: 350px;
+  }
+}
+@media all and (max-width: 1050px) {
+  header .logoContainer {
+    max-width: 300px;
+    padding-top: 50px;
+  }
+}
+@media all and (max-width: 770px) {
+  header .logoContainer {
+    display: none;
+  }
+}
+header .logoContainer .logo {
+  max-width: 100%;
+}
+header .nav .nav-item {
+  display: contents;
+}
+header .nav .nav-item a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+header .nav .nav-item a:hover {
+  color: #b9927d;
+}
+header .nav li + li:before {
+  content: "/";
+  font-size: 2em;
+  font-weight: 100;
 }
 header .hourAdress {
   display: flex;
   justify-content: center;
   gap: 200px;
   padding-bottom: 40px;
+}
+@media all and (max-width: 1050px) {
+  header .hourAdress {
+    gap: 70px;
+  }
+}
+@media all and (max-width: 770px) {
+  header .hourAdress {
+    gap: 40px;
+  }
+}
+@media all and (max-width: 576px) {
+  header .hourAdress {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 header .hourAdress_each {
   display: flex;
@@ -82,54 +142,113 @@ header .hourAdress_each {
 header .hourAdress_each span {
   font-size: 3em;
 }
+@media all and (max-width: 770px) {
+  header .hourAdress_each span {
+    font-size: 2em;
+  }
+}
 header .hourAdress_each p {
   font-size: 1.7em;
   margin: 0;
 }
+@media all and (max-width: 770px) {
+  header .hourAdress_each p {
+    font-size: 1.5em;
+  }
+}
 
 .sectionAbout {
   background-color: #F0ECEB;
+}
+.sectionAbout .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: start;
   padding-top: 100px;
   padding-bottom: 70px;
   gap: 50px;
+  max-width: 75%;
+  margin: auto;
 }
-.sectionAbout div {
+@media all and (max-width: 1050px) {
+  .sectionAbout .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.sectionAbout .about_each {
   max-width: 50%;
 }
-.sectionAbout div h2 {
+@media all and (max-width: 1050px) {
+  .sectionAbout .about_each {
+    max-width: 100%;
+  }
+}
+.sectionAbout .about_each h2 {
   font-size: 3em;
   font-family: "InriaSerif";
   padding-bottom: 20px;
 }
-.sectionAbout div h3 {
+.sectionAbout .about_each h3 {
   font-family: 2em;
   font-family: "Grenze";
   padding-bottom: 20px;
 }
-.sectionAbout div p {
+.sectionAbout .about_each p {
   font-size: 1.3em;
 }
-.sectionAbout div .coffeeImg {
+.sectionAbout .about_each .coffeeImg {
   max-width: 500px;
   margin-top: -50px;
+}
+@media all and (max-width: 1050px) {
+  .sectionAbout .about_each .coffeeImg {
+    max-width: 300px;
+  }
+}
+@media all and (max-width: 400px) {
+  .sectionAbout .about_each .coffeeImg {
+    max-width: 200px;
+    padding-bottom: 50px;
+  }
 }
 
 .sectionMenu {
   background-color: #E4E0DD;
+  padding-bottom: 70px;
+}
+.sectionMenu .grid {
+  max-width: 75%;
+  margin: auto;
+}
+@media all and (max-width: 1050px) {
+  .sectionMenu .grid {
+    max-width: 85%;
+  }
+}
+@media all and (max-width: 770px) {
+  .sectionMenu .grid {
+    max-width: 90%;
+  }
 }
 .sectionMenu .grid .grid-1 {
-  max-width: 75%;
-  height: 600px;
+  height: 500px;
   padding-bottom: 20px;
-  margin: auto;
+}
+@media all and (max-width: 770px) {
+  .sectionMenu .grid .grid-1 {
+    height: 300px;
+    padding-bottom: 10px;
+  }
 }
 .sectionMenu .grid .grid-2 {
-  max-width: 75%;
-  height: 500px;
-  margin: auto;
+  height: 400px;
+}
+@media all and (max-width: 770px) {
+  .sectionMenu .grid .grid-2 {
+    height: 300px;
+  }
 }
 .sectionMenu .grid img {
   -o-object-fit: cover;
@@ -137,11 +256,26 @@ header .hourAdress_each p {
   max-width: 100%;
   max-height: 100%;
   margin-top: -70px;
+  padding-right: 20px;
+  padding-left: 0;
+}
+@media all and (max-width: 770px) {
+  .sectionMenu .grid img {
+    padding-right: 10px;
+  }
+}
+.sectionMenu .grid .last {
+  padding-right: 0px;
 }
 .sectionMenu .menu {
   margin: auto;
   max-width: 75%;
   padding-bottom: 70px;
+}
+@media all and (max-width: 1050px) {
+  .sectionMenu .menu {
+    max-width: 85%;
+  }
 }
 .sectionMenu .menu h3 {
   font-family: "InriaSerif";
@@ -160,13 +294,28 @@ header .hourAdress_each p {
   gap: 50px;
   padding-bottom: 70px;
 }
+@media all and (max-width: 576px) {
+  .sectionMenu .menu .tableDrink {
+    flex-direction: column;
+  }
+}
 .sectionMenu .menu .tableDrink_1 {
   width: 50%;
   border-top: 1px solid #222;
 }
+@media all and (max-width: 576px) {
+  .sectionMenu .menu .tableDrink_1 {
+    width: 100%;
+  }
+}
 .sectionMenu .menu .tableDrink_2 {
   width: 50%;
   border-top: 1px solid #222;
+}
+@media all and (max-width: 576px) {
+  .sectionMenu .menu .tableDrink_2 {
+    width: 100%;
+  }
 }
 .sectionMenu .menu .tableDrink_each {
   display: flex;
@@ -177,4 +326,135 @@ header .hourAdress_each p {
 .sectionMenu .menu .tableDrink_each p {
   margin: 0;
   font-size: 1.3em;
+}
+
+.sectionCard {
+  background-color: #F0ECEB;
+  padding-bottom: 70px;
+}
+.sectionCard .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  max-width: 75%;
+  margin: auto;
+}
+@media all and (max-width: 1050px) {
+  .sectionCard .cards {
+    flex-direction: column;
+    gap: 100px;
+    max-width: 60%;
+  }
+}
+@media all and (max-width: 770px) {
+  .sectionCard .cards {
+    max-width: 75%;
+  }
+}
+@media all and (max-width: 576px) {
+  .sectionCard .cards {
+    max-width: 90%;
+  }
+}
+.sectionCard .cards_each {
+  text-align: center;
+  display: inherit;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.sectionCard .cards_each img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: 300px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.sectionCard .cards_each h4 {
+  font-family: "InriaSerif";
+  font-weight: bold;
+}
+.sectionCard .cards_each p {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 50px 0 1px;
+}
+footer .info {
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+@media all and (max-width: 1050px) {
+  footer .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+footer .info_each h3 {
+  font-family: "Grenze";
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid white 1px;
+  font-size: 3.5em;
+}
+@media all and (max-width: 576px) {
+  footer .info_each h3 {
+    font-size: 3em;
+  }
+}
+footer .info_each p {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+footer .info_each p a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+footer .info_each p a:hover {
+  color: #b9927d;
+}
+footer .icon {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer .icon a {
+  font-size: 2.5em;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+footer .icon a:hover {
+  color: #b9927d;
+}
+footer .brand {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+@media all and (max-width: 400px) {
+  footer .brand {
+    gap: 10px;
+  }
+}
+footer .brand a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+footer .brand a:hover {
+  color: #b9927d;
 }/*# sourceMappingURL=style.css.map */
