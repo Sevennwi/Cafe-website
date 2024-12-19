@@ -50,6 +50,11 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+@media all and (max-width: 576px) {
+  header {
+    height: 100vh;
+  }
+}
 header .mainTitle {
   display: flex;
   justify-content: space-between;
@@ -63,6 +68,11 @@ header .mainTitle h1 {
 @media all and (max-width: 1050px) {
   header .mainTitle h1 {
     font-size: 6em;
+  }
+}
+@media all and (max-width: 576px) {
+  header .mainTitle h1 {
+    padding-bottom: 20px;
   }
 }
 @media all and (max-width: 350px) {
@@ -271,7 +281,7 @@ header .hourAdress_each p a:hover {
 }
 @media all and (max-width: 770px) {
   .sectionMenu .grid .grid-2 {
-    height: 300px;
+    height: 200px;
   }
 }
 .sectionMenu .grid img {
@@ -367,7 +377,7 @@ header .hourAdress_each p a:hover {
 @media all and (max-width: 1050px) {
   .sectionCard .cards {
     flex-direction: column;
-    gap: 100px;
+    gap: 150px;
     max-width: 60%;
   }
 }
