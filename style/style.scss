@@ -20,6 +20,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+    @include mobile {
+      padding: 0;
+    }
     h1 {
       font-size: 7em;
       font-family: "GreatVibes";

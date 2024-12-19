@@ -61,6 +61,11 @@ header .mainTitle {
   justify-content: space-between;
   padding: 0 30px;
 }
+@media all and (max-width: 576px) {
+  header .mainTitle {
+    padding: 0;
+  }
+}
 header .mainTitle h1 {
   font-size: 7em;
   font-family: "GreatVibes";
