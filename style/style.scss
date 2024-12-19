@@ -14,6 +14,7 @@ header {
   justify-content: space-between;
   @include mobile {
     height: 90vh;
+    justify-content: space-around;
   }
   .mainTitle {
     display: flex;
@@ -25,6 +26,9 @@ header {
       padding-top: 40px;
       @include mini-ordi {
         font-size: 6em;
+      }
+      @include mobile {
+        display: none;
       }
       @include mini-mobile-s {
         font-size: 5em;
@@ -40,8 +44,8 @@ header {
       max-width: 300px;
       padding-top: 50px;
     }
-    @include tablet {
-      display: none;
+    @include mobile{
+      max-width: 100%;
     }
     .logo {
       max-width: 100%;
@@ -49,7 +53,13 @@ header {
   }
 
   .nav {
+    margin-top: -70px;
+    padding-left: 30px;
+    @include ordi {
+      margin-top: -30px;
+    }
     @include mobile {
+      margin-top: 10px;
       justify-content: center;
     }
     .nav-item {
@@ -61,6 +71,10 @@ header {
         transition: all 0.2s ease-in-out;
         &:hover {
           color: #b9927d;
+        }
+        @include tablet {
+          font-size: 1.2em;
+          padding: 10px;
         }
         @include mini-mobile {
           font-size: 1.2em;
@@ -81,6 +95,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 200px;
+    padding-top: 10%;
     padding-bottom: 40px;
     @include mini-ordi {
       gap: 70px;
@@ -106,10 +121,10 @@ header {
         }
       }
       p {
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 0;
         @include tablet {
-          font-size: 1.5em;
+          font-size: 1.3em;
         }
         a {
           color: white;
@@ -335,13 +350,13 @@ footer {
         padding-bottom: 10px;
         margin-bottom: 10px;
         border-bottom: solid white 1px;
-        font-size: 3.5em;
+        font-size: 3em;
         @include mobile {
           font-size: 3em;
         }
       }
       p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-bottom: 5px;
       }
       a {
@@ -360,7 +375,7 @@ footer {
     justify-content: center;
     gap: 30px;
     a {
-      font-size: 2.5em;
+      font-size: 2em;
       color: white;
       transition: all 0.2s ease-in-out;
       &:hover {
