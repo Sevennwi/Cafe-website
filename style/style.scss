@@ -13,7 +13,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   @include mobile {
-    height: 100vh;
+    height: 90vh;
   }
   .mainTitle {
     display: flex;
@@ -25,9 +25,6 @@ header {
       padding-top: 40px;
       @include mini-ordi {
         font-size: 6em;
-      }
-      @include mobile {
-        padding-bottom: 20px;
       }
       @include mini-mobile-s {
         font-size: 5em;

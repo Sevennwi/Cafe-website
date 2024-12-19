@@ -52,7 +52,7 @@ header {
 }
 @media all and (max-width: 576px) {
   header {
-    height: 100vh;
+    height: 90vh;
   }
 }
 header .mainTitle {
@@ -68,11 +68,6 @@ header .mainTitle h1 {
 @media all and (max-width: 1050px) {
   header .mainTitle h1 {
     font-size: 6em;
-  }
-}
-@media all and (max-width: 576px) {
-  header .mainTitle h1 {
-    padding-bottom: 20px;
   }
 }
 @media all and (max-width: 350px) {
