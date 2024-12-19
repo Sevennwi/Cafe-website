@@ -92,6 +92,11 @@ header .logoContainer {
 header .logoContainer .logo {
   max-width: 100%;
 }
+@media all and (max-width: 576px) {
+  header .nav {
+    justify-content: center;
+  }
+}
 header .nav .nav-item {
   display: contents;
 }
@@ -104,10 +109,21 @@ header .nav .nav-item a {
 header .nav .nav-item a:hover {
   color: #b9927d;
 }
+@media all and (max-width: 400px) {
+  header .nav .nav-item a {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+}
 header .nav li + li:before {
   content: "/";
   font-size: 2em;
   font-weight: 100;
+}
+@media all and (max-width: 400px) {
+  header .nav li + li:before {
+    font-size: 1.9em;
+  }
 }
 header .hourAdress {
   display: flex;
@@ -155,6 +171,14 @@ header .hourAdress_each p {
   header .hourAdress_each p {
     font-size: 1.5em;
   }
+}
+header .hourAdress_each p a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+header .hourAdress_each p a:hover {
+  color: #b9927d;
 }
 
 .sectionAbout {
@@ -416,12 +440,12 @@ footer .info_each p {
   font-size: 1.3em;
   margin-bottom: 5px;
 }
-footer .info_each p a {
+footer .info_each a {
   color: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-footer .info_each p a:hover {
+footer .info_each a:hover {
   color: #b9927d;
 }
 footer .icon {
